@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EAEDF0;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.identity{
+    background: linear-gradient(270deg,#B42335,#FB9E9E);
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin: 50px 150px 10px;
+    border-radius: 200px;
+}
+.nama{
+    text-align: center;
+    color: #FFF2F2;
+    font-family:  'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin: 0 0 30px;
+}
+.box{
+    /* padding: 40px; */
+    position: absolute;
+    height: 50%;
+    background: transparent;
+    text-align: center;
+    grid-area: auto;
+}
+.box p{
+    font-family: 'roboto', sans-serif;
+    color: #FFF2F2;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 10px;
+
+}
+.box input[type = "text"],.box input[type = "email"],.box input[type = "tel"],textarea{
+    border:0;
+    background: none;
+    text-align: center;
+    border-bottom: 2px solid #550A1C;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color:#EEEAEA;
+    transition: 0,5s;
+}
+.box input[type = "text"]:focus,.box input[type = "email"]:focus,.box input[type = "tel"]:focus, textarea:focus{
+    width: 280px;
+    border-color: #E34651 ;
+}
+.box input[type = "submit"]{
+    border:0;
+    background: #E34651;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: #26040E;
+    border-radius: 24px;
+    transition: 0,25s;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+    background: #FFF2F2;
+
+}
+.media{
+    margin-top: 58vh;
+    margin-left: 80px;
+}
+.media a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 8px;
+}
+.media a:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: linear-gradient(45deg, #F37273,#FB9E9E);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+.media a:hover::before{
+    transform: scale(0);
+}
+.media a i{
+    transition: 0.3s ease-in;
+}
+.media a:hover i{
+    background: linear-gradient(45deg,#F37273,#FB9E9E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #550A1C;
+}
+/* akhir bagian kanan */
+
+.dll{
+    width: 70vw;
+    margin-left: 430px;
+    font-family: 'Roboto', sans-serif;
+}
+.dll h2{
+    margin: 40px 0 50px;
+    font-size: 1.7em;
+    text-align: center;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.about p{
+    margin: 0 20px 0;
+    font-size: 14px;
+}
+.exp ul li{
+    margin: 10px 0 20px 10px;
+}
+.exp p{
+    margin: 20px 0 10px;
+}
+
+/* awal style untuk bagian education dan progress bar */
+.angga{
+    display: flex;
+    justify-content: space-around;
+}
+.edu{
+    width: 300px;
+    height: 278.5px;
+}
+.edu table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill{
+    margin-left: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+.contain{
+    background-color: #E0DBDB;
+    width: 260px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.point{
+    background-color: #F37273;
+    width: 90%;
+    color: #26040E;
+    border-radius: 10px;
+}
+.point2{
+    background-color: #F37273;
+    width: 50%;
+    color: #26040E;
+    border-radius: 10px;
+}
+.point3{
+    background-color: #F37273;
+    width: 80%;
+    color: #26040E;
+    border-radius: 10px;
+}
+.text{
+    width: 260px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0;
+    text-align: center;
+}
+/* akhir style untuk bagian education dan progress bar */
+
+
+::-webkit-input-placeholder{
+    color: #EEEAEA;
+}
+/* awal scroll bar */
+/* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+::-webkit-scrollbar {
+    width: 20px;    
+}
+/* membuat background dari scrollbar */
+/* kasih warna transparan agar lebih estetik  */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+/* membuat styling pada batang atau bar scrollbar  */
+/* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+    ::-webkit-scrollbar-thumb {
+    background-color: #F37273;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+/* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+    ::-webkit-scrollbar-thumb:hover {
+    background-color: #851227;
+}
+/* akhir scroll bar */
